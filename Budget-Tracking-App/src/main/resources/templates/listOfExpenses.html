@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense List</title>
+    <link href="../static/style.css" type="text/css" media="all" rel="stylesheet">
+</head>
+<body>
+<h1>Expense List</h1>
+<a th:href="@{/expense/add}">Add New Expense</a>
+<table>
+    <thead>
+    <tr>
+        <th>Category</th>
+        <th>Amount</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="expense : ${expenses}">
+        <td th:text="${expense.category}"></td>
+        <td th:text="${expense.amount}"></td>
+        <td th:text="${expense.title}"></td>
+        <td th:text="${expense.description}"></td>
+        <td th:text="${expense.date}"></td>
+        <td>
+            <a th:href="@{'/expense/edit/' + ${expense.id}}">Edit</a>
+            <a th:href="@{'/expense/delete/' + ${expense.id}}">Delete</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

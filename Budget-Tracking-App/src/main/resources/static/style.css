@@ -1,0 +1,93 @@
+body {
+  background: aliceblue;
+  font-family: Arial, sans-serif;
+          margin: 20px;
+          padding: 0;
+}
+
+/* Navigation */
+
+div {
+  box-sizing: border-box;
+  background-color: #3587A4;
+  overflow: auto;
+  padding: 18px 50px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  color: #FFF;
+  display: inline-block;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 20px 18px 10px 18px;
+  text-transform: uppercase;
+}
+
+
+/* Table */
+
+table {
+  height: 40%;
+  left: 20%;
+  margin: 20px auto;
+  overflow-y: scroll;
+  position: static;
+  white-space: nowrap
+  width: 80%;
+}
+
+thead th {
+  background: #88CCF1;
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+  white-space: nowrap
+}
+
+th, td {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  padding: 20px;
+  text-align: left;
+  width: 33.3333%;
+  font-size: 18px;
+}
+ .btn {
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        margin: 4px;
+        display: inline-block;
+    }
+    .btn-primary {
+        background-color: #007bff;
+        color: white;
+    }
+    .btn-edit {
+        background-color: #ffc107;
+        color: black;
+    }
+    .btn-delete {
+        background-color: #dc3545;
+        color: white;
+    }
